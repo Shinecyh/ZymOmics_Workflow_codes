@@ -1,0 +1,7 @@
+samples:
+    single_fq: home/chenyunhao/zm401/nanopore/pass.fq.gz
+reference:
+    Ref: /home/chenyunhao/Workflow/ZM4_genomic.fasta
+minlength:
+    min_len: "2000"
+    

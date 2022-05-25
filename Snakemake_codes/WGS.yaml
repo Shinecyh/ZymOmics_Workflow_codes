@@ -1,0 +1,7 @@
+samples:
+   paired_fq_1: /home/chenyunhao/WYL_data/CG_1.clean.fq.gz
+   paired_fq_2: /home/chenyunhao/WYL_data/CG_2.clean.fq.gz
+reference:
+   bwaRef: /home/chenyunhao/WYL_data/ref1/ATCC13869_genome.fna
+annotation:
+   gff: /home/chenyunhao/WYL_data/ref1/ATCC13869_genome.gff

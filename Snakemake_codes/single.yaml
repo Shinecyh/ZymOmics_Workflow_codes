@@ -1,0 +1,9 @@
+samples:
+    single_fq: /home/linux/zymo/RNA-seq_workflow/Test/qweqwe.fq.gz
+reference:
+    bwaRef: /home/linux/zymo/RNA-seq_workflow/ZM4.fasta
+annotation:
+    gtf: /home/linux/zymo/RNA-seq_workflow/ZM4.gtf
+feature:
+    features: gene
+    
