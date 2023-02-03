@@ -40,8 +40,8 @@ rule bwa_index:
 rule bwa_map:
     input:
         FILE = rules.fastp_trim.output.trimmed,
-        INDEX= config["reference"]["bwaRef"],
-        asd = expand("{INDEX}.{IDX}",IDX=["amb", "ann", "bwt", "pac", "sa"],INDEX = config["reference"]["bwaRef"])
+        INDEX= rules.bwa_index.output,
+        #asd = expand("{INDEX}.{IDX}",IDX=["amb", "ann", "bwt", "pac", "sa"],INDEX = config["reference"]["bwaRef"])
     output:
         temp("bwa/{sample}.sam")
     log:
