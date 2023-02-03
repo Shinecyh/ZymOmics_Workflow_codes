@@ -46,7 +46,7 @@ rule subread_map:
     input:
         trim_1 = rules.fastp_trim.output.trimmed_1,
         trim_2 = rules.fastp_trim.output.trimmed_2,
-        INDEX= config["reference"]["bwaRef"]
+        INDEX= rules.subread_buildindex.output
     output:
         temp("map/mapped.sam")
     log:
